@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="glass-card">
+        <h1>🔐 Password Manager</h1>
+
+        <!-- Add Password Form -->
+        <div class="form-group">
+          <input type="text" id="site" placeholder="Website Name" />
+          <input type="text" id="username" placeholder="Username" />
+          <input type="password" id="password" placeholder="Password" />
+          <button id="saveBtn">Save</button>
+        </div>
+
+        <!-- Search Field -->
+        <div class="search-group">
+          <input
+            type="text"
+            id="search"
+            placeholder="Search saved passwords..."
+          />
+        </div>
+
+        <!-- Master Key Input Field  -->
+        <div class="unlock-group">
+          <input
+            type="password"
+            id="masterKey"
+            placeholder="Enter master key to unlock"
+          />
+          <button id="unlockBtn">Unlock</button>
+        </div>
+
+        <!-- Set Master Key -->
+        <div class="setkey-group">
+          <input
+            type="password"
+            id="newMasterKey"
+            placeholder="Set new master key"
+          />
+          <button id="setKeyBtn">Set Master Key</button>
+        </div>
+
+        <!-- Saved Passwords Table -->
+        <div class="table-container">
+          <table id="passwordTable">
+            <thead>
+              <tr>
+                <th>Website</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- JS will populate rows here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>© 2025 Srinjay. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
